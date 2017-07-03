@@ -1,0 +1,15 @@
+#first-item {
+  margin-bottom: 15px;
+}
+
+#right-column {
+  color: #336699;
+  margin-left: 50px;
+  float: left
+}
+
+#left-column {
+  float: left;
+  list-style-type: none;
+  font-size: large;
+}
