@@ -2,4 +2,4 @@
 layout: default
 ---
 
-## This page is about me!))
+## This page is about me!
