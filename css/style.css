@@ -13,8 +13,3 @@
   list-style-type: none;
   font-size: large;
 }
-
-container {
-  grid-template-columns: <line-name> ;
-  grid-template-rows: <line-name> ;
-}
