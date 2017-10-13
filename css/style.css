@@ -13,3 +13,16 @@
   list-style-type: none;
   font-size: large;
 }
+
+body {
+  margin: 30px;
+  margin-right: 0%;
+}
+
+#mountains {
+  padding-top: 18px
+}
+
+td {
+  text-align: center;
+}

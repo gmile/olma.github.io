@@ -2,8 +2,8 @@
 layout: default
 ---
 
-<table id="mountains">
-  {% tablerow picture in site.data.pictures.mountains cols: 3 %}
+<table id="sketches">
+  {% tablerow picture in site.data.pictures.sketches cols: 3 %}
     <a href="https://lh3.googleusercontent.com/{{ picture.image_id }}{{ picture.original_size }}">
       <img title="{{ picture.text }}" src="https://lh3.googleusercontent.com/{{ picture.image_id }}{{ picture.thumbnail_size }}" />
     </a>
