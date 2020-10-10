@@ -2,20 +2,9 @@
 layout: default
 ---
 
-<div class="image"><img src="https://placedog.net/240/320"></img></div>
-<div class="image">image</div>
-<div class="image">image</div>
-<div class="image">image</div>
-<div class="image">image</div>
-<div class="image">image</div>
-<div class="image">image</div>
-<div class="image">image</div>
-<div class="image">image</div>
-<div class="image">image</div>
-<div class="image">image</div>
-<div class="image">image</div>
-<div class="image">image</div>
-<div class="image">image</div>
-<div class="image">image</div>
-<div class="image">image</div>
-<div class="image">image</div>
+{% for item in site.data.movement_of_forms.items %}
+  <div class="image">
+    {% if item.image_url %}<img src="{{ item.image_url }}"></img>{% endif %}
+    {% if item.text %}<p>{{ item.text }}</p>{% endif %}
+  </div>
+{% endfor %}

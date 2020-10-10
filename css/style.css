@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: auto 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  gap: 0px 10px;
+  gap: 0px 25px;
   grid-template-areas: "menu items items items";
 }
 .menu {
@@ -12,12 +12,27 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   grid-template-rows: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 10px 10px;
+  gap: 50px 50px;
   grid-area: items;
 }
 
-.image {
-  border: 1px dashed #333
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+  }
+}
+
+.image img {
+  width: 100%
+}
+
+.image > p {
+  margin: 0;
 }
 
 #left-column a.work {
