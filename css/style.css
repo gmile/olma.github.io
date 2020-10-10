@@ -1,12 +1,22 @@
-#right-column {
-  color: #336699;
-  margin-left: 50px;
-  float: left
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 10px;
+  grid-template-areas:
+    "menu items items items";
+}
+.menu { grid-area: menu; }
+.items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 10px 10px;
+  grid-area: items;
 }
 
-#left-column {
-  float: left;
-  list-style-type: none
+.image {
+  border: 1px dashed #333
 }
 
 #left-column a.work {
