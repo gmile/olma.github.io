@@ -1,12 +1,13 @@
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: auto 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   gap: 0px 10px;
-  grid-template-areas:
-    "menu items items items";
+  grid-template-areas: "menu items items items";
 }
-.menu { grid-area: menu; }
+.menu {
+  grid-area: menu;
+}
 .items {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -63,8 +64,6 @@ html, body, ul {
   padding: 0;
   margin: 0
 }
-
-
 
 body {
   padding: 25px
