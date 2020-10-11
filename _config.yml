@@ -66,3 +66,8 @@ menu:
       - url: /in-silence
         title: In-silence
         enabled: false
+    - year: 2016
+      links:
+      - url: /rain
+        title: Rain
+        enabled: true
