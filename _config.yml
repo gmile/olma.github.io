@@ -40,7 +40,7 @@ menu:
         collab: true
       - url: /her-space
         title: Her space
-        enabled: false
+        enabled: true
         collab: true
       - url: /leaving-no-traces
         title: Leaving no traces
