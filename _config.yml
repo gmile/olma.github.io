@@ -38,7 +38,10 @@ menu:
         title: Plastic period
         enabled: false
         collab: true
-      - url: /her-space
+      - url: /her-space-1
+        title: Her space
+        enabled: true
+      - url: /her-space-2
         title: Her space
         enabled: true
         collab: true

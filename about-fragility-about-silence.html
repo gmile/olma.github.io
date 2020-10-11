@@ -10,17 +10,24 @@ layout: default
     grid-area: items;
     grid-template-areas:
       "header big big"
-      "none big big"
-      "none text text";
+      "header big big"
+      ". text text"
+      "m m ."
+      ". a a"
+      "room room ."
+      ;
   }
 </style>
 
 <div style="grid-area: header" class="image">
   <h2>About fragility. About silence</h2>
+  <h3>
+    art space "Masterskaya"<br>
+    sep 2018</h3>
 </div>
 
 
-<div tyle="grid-area: big" class="image">
+<div style="grid-area: big" class="image">
   <img src="/photos/fragility-silence/1.jpg">
 </div>
 
@@ -64,7 +71,7 @@ layout: default
   </p>
 </div>
 
-<div class="image">
+<div style="grid-area: m" class="image">
   <img src="/photos/fragility-silence/3.jpg">
   <p>Oil on paper 21×50 cm</p>
 </div>
@@ -79,7 +86,7 @@ layout: default
   <p>Oil, spray paint on canvas 110×170 cm</p>
 </div>
 
-<div class="image">
+<div style="grid-area: a" class="image">
   <img src="/photos/fragility-silence/6.jpg">
   <p>Oil on paper 21×50 cm</p>
 </div>
@@ -103,6 +110,6 @@ layout: default
   <img src="/photos/fragility-silence/10.jpg">
 </div>
 
-<div class="image">
+<div style="grid-area: room" class="image">
   <img src="/photos/fragility-silence/11.jpg">
 </div>
