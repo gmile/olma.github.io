@@ -6,26 +6,31 @@
   <body class="grid-container">
     <div id="left-column" class="menu">
       <a style="font-weight: bold;">olga antonova</a>
-      <span class="year">2019</span>
-      <a class="work" href="/movement-of-forms">Movement of forms</a>
-      <a class="work" href="/form-of-feelings">Form of feelings</a>
-      <a class="work" href="/water-lillies">Water lillies</a>
-      <span class="year">2018</span>
-      <a class="work" href="/about-fragility-about-silence">About fragility. About silence.</a>
-      <a class="work" href="/monochrome-still-life">Monochrome still-life <span>collab.</span></a>
-      <a class="work" href="/plastic-period">Plastic period <span>collab.</span></a>
-      <a class="work" href="/her-space">Her space <span>collab.</span></a>
-      <a class="work" href="/leaving-no-traces">Leaving no traces <span>collab.</span></a>
-      <span class="year">2017</span>
-      <a class="work" href="/remain-beyond">Remain beyond</a>
-      <a class="work" href="/circle-of-silence">Circle of silence</a>
-      <a class="work" href="/connections">Connections</a>
-      <a class="work" href="/untitled">Untitled</a>
-      <a class="work" href="/in-silence">In-silence</a>
+
+      {% for year in site.menu.years %}
+        <span class="year">{{ year.year }}</span>
+        {% for link in year.links %}
+          {% capture title %}
+            {{ link.title }}{% if link.collab %} <span class="collab">collab.</span>{% endif %}
+          {% endcapture %}
+
+          {% assign link_url = link.url | append: ".html" %}
+
+          {% if link.enabled %}
+            {% if link_url == page.url %}
+              <span class="work active">{{ title }}</span>
+            {% else %}
+              <a class="work" href="{{ link.url }}">{{ title }}</a>
+            {% endif %}
+          {% else %}
+            <span class="work">{{ title }}</span>
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+
       <br>
       <a class="work" href="/files/cv.pdf">cv.pdf</a>
       <a class="work" href="/files/portfolio.pdf">portfolio.pdf</a>
-      <a class="work" href="/files/bio.pdf">bio.pdf (UA)</a>
       <br>
       <a href="https://www.instagram.com/olma__"><img height=24 src="https://en.instagram-brand.com/wp-content/themes/ig-branding/prj-ig-branding/assets/images/ig-logo-black.svg"></img></a>
       <a href="https://www.facebook.com/olga.antonova.art"><img height=24 src="/img/fb-logo.png"></img></a>

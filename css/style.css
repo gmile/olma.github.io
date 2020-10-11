@@ -41,11 +41,22 @@
   text-decoration: none;
 }
 
+#left-column span.work {
+  display: block;
+  color: grey
+}
+
+#left-column span.work.active {
+  display: block;
+  color: black;
+  font-weight: bold;
+}
+
 #left-column a:hover {
   color: blue
 }
 
-#left-column a span {
+#left-column .work span {
   font-size: 8pt
 }
 

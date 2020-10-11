@@ -1,4 +1,4 @@
-title: Your awesome title
+title: Olga Antonova's website
 email: antonova.vo@gmail.com
 description: >
   Write an awesome description for your new site here. You can edit this
@@ -6,10 +6,60 @@ description: >
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
 
 # Build settings
 markdown: kramdown
 plugins:
   - jekyll-feed
+
+menu:
+  years:
+    - year: 2019
+      links:
+      - url: /movement-of-forms
+        title: Movement of forms
+        enabled: false
+      - url: /form-of-feelings
+        title: Form of feelings
+        enabled: false
+      - url: /water-lillies
+        title: Water lillies
+        enabled: false
+    - year: 2018
+      links:
+      - url: /about-fragility-about-silence
+        title: About fragility. About silence
+        enabled: true
+      - url: /monochrome-still-life
+        title: Monochrome still life
+        enabled: false
+        collab: true
+      - url: /plastic-period
+        title: Plastic period
+        enabled: false
+        collab: true
+      - url: /her-space
+        title: Her space
+        enabled: false
+        collab: true
+      - url: /leaving-no-traces
+        title: Leaving no traces
+        enabled: false
+        collab: true
+    - year: 2017   
+      links:
+      - url: /remain-beyond
+        title: Remain beyond
+        enabled: false
+      - url: /circle-of-silence
+        title: Circle of silence
+        enabled: false
+      - url: /connections
+        title: Connections
+        enabled: false
+      - url: /untitled
+        title: Untitled
+        enabled: false
+      - url: /in-silence
+        title: In-silence
+        enabled: false
