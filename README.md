@@ -5,3 +5,5 @@ https://sites.google.com/site/picasaresources/Home/Picasa-FAQ/google-photos-1/ho
 
 Status doc:
 https://docs.google.com/spreadsheets/d/1M2m4Ctz-WYophsP0XDWRZa5glpApDyFfroOr4bAoP3E/edit#gid=0
+
+Figma: https://www.figma.com/file/SqcawloYI1PxmyPeMyr5Ck/olga-antonova.net?node-id=1%3A39
