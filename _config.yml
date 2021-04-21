@@ -16,6 +16,9 @@ menu:
   years:
     - year: 2019
       links:
+      - url: /pencil
+        title: Pencil works
+        enabled: true
       - url: /movement-of-forms
         title: Movement of forms
         enabled: false
