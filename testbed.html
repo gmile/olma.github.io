@@ -6,6 +6,7 @@
         display: grid;
         column-gap: 10px;
         row-gap: 10px;
+        grid-template-rows: auto;
         grid-template-areas: 
           ". . t t t t"
           ". . i1 i1 i1 i1"
@@ -14,36 +15,39 @@
           "i4 i4 i4 i4 . ."
           "i4 i4 i4 i4 t4 t4"
           "i5 i5 i5 i5 i5 i5"
-          ". .  i6 i6 t6 t6"
       }
 
       .top-text {
-        text-align: right;
         grid-area: t;
+        background-color: #333;
+        height: 50px;
         width: 100%
       }
 
       .i1 {
         grid-area: i1;
+        height: 300px;
+        width: 100%;
         background-color: #369;
       }
 
-      img { width: 100% }
-
       .i2 {
         grid-area: i2;
+        height: 300px;
         width: 100%;
-        background-color: #123;
+        background-color: #567;
       }
 
       .i3 {
         grid-area: i3;
+        height: 300px;
         width: 100%;
         background-color: #567;
       }
 
       .i4 {
         grid-area: i4;
+        height: 600px;
         width: 100%;
         background-color: #123;
       }
@@ -65,27 +69,12 @@
   </head>
   <body>
     <div class="container">
-      <div class="top-text">
-        <h3 style="color: #000">Limited space of paper</h3>
-        <p>
-          <a style="font-style: italic" href="https://soundcloud.com/olga-antonova-art/limited-space-of-paper">
-            https://soundcloud.com/olga-antonova-art/limited-space-of-paper
-          </a>
-        </p>
-      </div>
+      <div class="top-text"></div>
 
-      <div class="i1">
-        <img src="/Users/eugene/projects/olma.github.io/photos/limited-space-of-paper/1.jpg" />
-      </div>
-      <div class="i2">
-        <img src="/Users/eugene/projects/olma.github.io/photos/limited-space-of-paper/2.jpg" />
-      </div>
-      <div class="i3">
-        <img src="/Users/eugene/projects/olma.github.io/photos/limited-space-of-paper/3.jpg" />
-      </div>
-      <div class="i4">
-        <img src="/Users/eugene/projects/olma.github.io/photos/limited-space-of-paper/4.jpg" />
-      </div>
+      <div class="i1"></div>
+      <div class="i2"></div>
+      <div class="i3"></div>
+      <div class="i4"></div>
       <div class="t4"></div>
       <div class="i5"></div>
     </div>
