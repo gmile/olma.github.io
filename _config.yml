@@ -13,6 +13,12 @@ plugins:
   - jekyll-feed
 
 menu:
+  - url: /limited-space-of-paper
+    title: Limited space of paper
+    enabled: true
+
+
+deprecated_menu:
   years:
     - year: 2019
       links:

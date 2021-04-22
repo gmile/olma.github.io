@@ -4,6 +4,7 @@
 .grid-container {
   display: grid;
   padding-left: 250px;
+  padding-bottom: 100px;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 10px 10px;
   grid-template-areas:
@@ -17,15 +18,17 @@
     ". . img7 img7 img7 img7"
     ". . img8 img8 img8 img8"
     "img9 img9 img9 img9 img9 img9"
-    "img10 img10 img10 img11 img11 img11"
-    ". . img12 img12 img12 img12"
+    "img10 img10 img10 img10 img10 img10"
+    "img11 img11 img11 img12 img12 img12"
     ". . img13 img13 img13 img13"
-    "img14 img14 img14 img14 . ."
-    "img14 img14 img14 img14 . ."
-    "img14 img14 img14 img14 text2 text2"
-    ". . img15 img15 img15 img15"
-    ". . img16 img16 img16 img16"
-    "img17 img17 img17 img17 img17 img17";
+    ". . img14 img14 img14 img14"
+    "img15 img15 img15 img15 img15 img15"
+    "img16 img16 img16 img16 . ."
+    "img16 img16 img16 img16 . ."
+    "img16 img16 img16 img16 text2 text2"
+    ". . img17 img17 img17 img17"
+    ". . img18 img18 img18 img18"
+    "img19 img19 img19 img19 img19 img19";
 }
 
 .img1 { grid-area: img1; }
@@ -58,28 +61,30 @@
 
 .img14 { grid-area: img14; }
 
-.text2 { grid-area: text2; }
+.text2 { grid-area: text2; align-self: end }
 
 .img15 { grid-area: img15; }
 
 .img16 { grid-area: img16; }
 
 .img17 { grid-area: img17; }
+.img18 { grid-area: img18; }
+.img19 { grid-area: img19; text-align: right }
     </style>
   </head>
   <body>
     <div class="grid-container">
       <div class="img1">
-        <img style="max-width: 100%" src="/Users/eugene/projects/olma.github.io/photos/limited-space-of-paper/1.jpg" />
+        <img style="max-width: 100%" src="/Users/eugene/projects/olma.github.io/photos/limited-space-of-paper/1.webp" />
       </div>
       <div class="img2">
-        <img style="max-width: 100%" src="/Users/eugene/projects/olma.github.io/photos/limited-space-of-paper/2.jpg" />
+        <img style="max-width: 100%" src="/Users/eugene/projects/olma.github.io/photos/limited-space-of-paper/2.webp" />
       </div>
       <div class="img3">
-        <img style="max-width: 100%" src="/Users/eugene/projects/olma.github.io/photos/limited-space-of-paper/3.jpg" />
+        <img style="max-width: 100%" src="/Users/eugene/projects/olma.github.io/photos/limited-space-of-paper/3.webp" />
       </div>
       <div class="img4">
-        <img style="max-width: 100%" src="/Users/eugene/projects/olma.github.io/photos/limited-space-of-paper/4.jpg" />
+        <img style="max-width: 100%" src="/Users/eugene/projects/olma.github.io/photos/limited-space-of-paper/4.webp" />
       </div>
       <div class="text1">
         <p>
@@ -92,31 +97,61 @@
         </p>
       </div>
       <div class="img5">
-        <img style="max-width: 100%" src="/Users/eugene/projects/olma.github.io/photos/limited-space-of-paper/5.jpg" />
+        <img style="max-width: 100%" src="/Users/eugene/projects/olma.github.io/photos/limited-space-of-paper/5.webp" />
       </div>
       <div class="img6">
-        <img style="max-width: 100%" src="/Users/eugene/projects/olma.github.io/photos/limited-space-of-paper/6.jpg" />
+        <img style="max-width: 100%" src="/Users/eugene/projects/olma.github.io/photos/limited-space-of-paper/6.webp" />
       </div>
       <div class="img7">
-        <img style="max-width: 100%" src="/Users/eugene/projects/olma.github.io/photos/limited-space-of-paper/7.jpg" />
+        <img style="max-width: 100%" src="/Users/eugene/projects/olma.github.io/photos/limited-space-of-paper/7.webp" />
       </div>
       <div class="img8">
-        <img style="max-width: 100%" src="/Users/eugene/projects/olma.github.io/photos/limited-space-of-paper/8.jpg" />
+        <img style="max-width: 100%" src="/Users/eugene/projects/olma.github.io/photos/limited-space-of-paper/8.webp" />
       </div>
       <div class="img9">
-        <img style="max-width: 100%" src="/Users/eugene/projects/olma.github.io/photos/limited-space-of-paper/9.jpg" />
+        <img style="max-width: 100%" src="/Users/eugene/projects/olma.github.io/photos/limited-space-of-paper/9.webp" />
       </div>
       <div class="img10">
-        <img style="max-width: 100%" src="/Users/eugene/projects/olma.github.io/photos/limited-space-of-paper/10.jpg" />
+        <img style="max-width: 100%" src="/Users/eugene/projects/olma.github.io/photos/limited-space-of-paper/10.webp" />
       </div>
-      <div class="img11"></div>
-      <div class="img12"></div>
-      <div class="img13"></div>
-      <div class="img14"></div>
-      <div class="text2"></div>
-      <div class="img15"></div>
-      <div class="img16"></div>
-      <div class="img17"></div>
+      <div class="img11">
+        <img style="max-width: 100%" src="/Users/eugene/projects/olma.github.io/photos/limited-space-of-paper/11.webp" />
+      </div>
+      <div class="img12">
+        <img style="max-width: 100%" src="/Users/eugene/projects/olma.github.io/photos/limited-space-of-paper/12.webp" />
+      </div>
+      <div class="img13">
+        <img style="max-width: 100%" src="/Users/eugene/projects/olma.github.io/photos/limited-space-of-paper/13.webp" />
+      </div>
+      <div class="img14">
+        <img style="max-width: 100%" src="/Users/eugene/projects/olma.github.io/photos/limited-space-of-paper/14.webp" />
+      </div>
+      <div class="text2">
+        <p>
+        LIMITED SPACE OF PAPER<br />
+        2019 – ongoing<br />
+        charcoal, pencil, liners,<br />
+        ink on paper<br />
+        50 x 70<br />
+        2019
+        </p>
+      </div>
+      <div class="img15">
+        <img style="max-width: 100%" src="/Users/eugene/projects/olma.github.io/photos/limited-space-of-paper/15.webp" />
+      </div>
+      <div class="img16">
+        <img style="max-width: 100%" src="/Users/eugene/projects/olma.github.io/photos/limited-space-of-paper/16.webp" />
+      </div>
+      <div class="img17">
+        <img style="max-width: 100%" src="/Users/eugene/projects/olma.github.io/photos/limited-space-of-paper/17.webp" />
+      </div>
+      <div class="img18">
+        <img style="max-width: 100%" src="/Users/eugene/projects/olma.github.io/photos/limited-space-of-paper/18.webp" />
+      </div>
+      <div class="img19">
+        <img style="max-width: 100%" src="/Users/eugene/projects/olma.github.io/photos/limited-space-of-paper/19.webp" />
+        <p>At Live!, Go Green gallery, Erlenbach/Zurich, Switzerland</p>
+      </div>
     </div>
   </body>
 </html>

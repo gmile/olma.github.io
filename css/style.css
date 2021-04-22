@@ -10,8 +10,6 @@
 }
 .items {
   display: grid;
-
-  gap: 50px 50px;
   grid-area: items;
 }
 

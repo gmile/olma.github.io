@@ -5,27 +5,24 @@
   </head>
   <body class="grid-container">
     <div id="left-column" class="menu">
-      <a style="font-weight: bold;">olga antonova</a>
+      <a style="font-weight: bold; display: block; margin-bottom: 1em">olga antonova</a>
 
-      {% for year in site.menu.years %}
-        <span class="year">{{ year.year }}</span>
-        {% for link in year.links %}
-          {% capture title %}
-            {{ link.title }}{% if link.collab %} <span class="collab">collab.</span>{% endif %}
-          {% endcapture %}
+      {% for link in site.menu %}
+        {% capture title %}
+          {{ link.title }}{% if link.collab %} <span class="collab">collab.</span>{% endif %}
+        {% endcapture %}
 
-          {% assign link_url = link.url | append: ".html" %}
+        {% assign link_url = link.url | append: ".html" %}
 
-          {% if link.enabled %}
-            {% if link_url == page.url %}
-              <span class="work active">{{ title }}</span>
-            {% else %}
-              <a class="work" href="{{ link.url }}">{{ title }}</a>
-            {% endif %}
+        {% if link.enabled %}
+          {% if link_url == page.url %}
+            <span class="work active">{{ title }}</span>
           {% else %}
-            <span class="work">{{ title }}</span>
+            <a class="work" href="{{ link.url }}">{{ title }}</a>
           {% endif %}
-        {% endfor %}
+        {% else %}
+          <span class="work">{{ title }}</span>
+        {% endif %}
       {% endfor %}
 
       <br>
