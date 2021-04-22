@@ -1,82 +1,122 @@
 <html>
   <head>
     <style>
-      .container {
-        padding-left: 300px;
-        display: grid;
-        column-gap: 10px;
-        row-gap: 10px;
-        grid-template-rows: auto;
-        grid-template-areas: 
-          ". . t t t t"
-          ". . i1 i1 i1 i1"
-          ". . i2 i2 i3 i3"
-          "i4 i4 i4 i4 . ."
-          "i4 i4 i4 i4 . ."
-          "i4 i4 i4 i4 t4 t4"
-          "i5 i5 i5 i5 i5 i5"
-      }
+.grid-container {
+  display: grid;
+  padding-left: 250px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px 10px;
+  grid-template-areas:
+    ". . img1 img1 img1 img1"
+    ". . img2 img2 img3 img3"
+    "img4 img4 img4 img4 . ."
+    "img4 img4 img4 img4 . ."
+    "img4 img4 img4 img4 text1 text1"
+    "img5 img5 img5 img5 img5 img5"
+    ". . img6 img6 img6 img6"
+    ". . img7 img7 img7 img7"
+    ". . img8 img8 img8 img8"
+    "img9 img9 img9 img9 img9 img9"
+    "img10 img10 img10 img11 img11 img11"
+    ". . img12 img12 img12 img12"
+    ". . img13 img13 img13 img13"
+    "img14 img14 img14 img14 . ."
+    "img14 img14 img14 img14 . ."
+    "img14 img14 img14 img14 text2 text2"
+    ". . img15 img15 img15 img15"
+    ". . img16 img16 img16 img16"
+    "img17 img17 img17 img17 img17 img17";
+}
 
-      .top-text {
-        grid-area: t;
-        background-color: #333;
-        height: 50px;
-        width: 100%
-      }
+.img1 { grid-area: img1; }
 
-      .i1 {
-        grid-area: i1;
-        height: 300px;
-        width: 100%;
-        background-color: #369;
-      }
+.img2 { grid-area: img2; }
 
-      .i2 {
-        grid-area: i2;
-        height: 300px;
-        width: 100%;
-        background-color: #567;
-      }
+.img3 { grid-area: img3; }
 
-      .i3 {
-        grid-area: i3;
-        height: 300px;
-        width: 100%;
-        background-color: #567;
-      }
+.img4 { grid-area: img4; }
 
-      .i4 {
-        grid-area: i4;
-        height: 600px;
-        width: 100%;
-        background-color: #123;
-      }
+.text1 { grid-area: text1; align-self: end }
 
-      .t4 {
-        grid-area: t4;
-        height: 200px;
-        width: 100%;
-        background-color: #987;
-      }
+.img5 { grid-area: img5; }
 
-      .i5 {
-        grid-area: i5;
-        height: 200px;
-        width: 100%;
-        background-color: #987;
-      }
+.img6 { grid-area: img6; }
+
+.img7 { grid-area: img7; }
+
+.img8 { grid-area: img8; }
+
+.img9 { grid-area: img9; }
+
+.img10 { grid-area: img10; }
+
+.img11 { grid-area: img11; }
+
+.img12 { grid-area: img12; }
+
+.img13 { grid-area: img13; }
+
+.img14 { grid-area: img14; }
+
+.text2 { grid-area: text2; }
+
+.img15 { grid-area: img15; }
+
+.img16 { grid-area: img16; }
+
+.img17 { grid-area: img17; }
     </style>
   </head>
   <body>
-    <div class="container">
-      <div class="top-text"></div>
-
-      <div class="i1"></div>
-      <div class="i2"></div>
-      <div class="i3"></div>
-      <div class="i4"></div>
-      <div class="t4"></div>
-      <div class="i5"></div>
+    <div class="grid-container">
+      <div class="img1">
+        <img style="max-width: 100%" src="/Users/eugene/projects/olma.github.io/photos/limited-space-of-paper/1.jpg" />
+      </div>
+      <div class="img2">
+        <img style="max-width: 100%" src="/Users/eugene/projects/olma.github.io/photos/limited-space-of-paper/2.jpg" />
+      </div>
+      <div class="img3">
+        <img style="max-width: 100%" src="/Users/eugene/projects/olma.github.io/photos/limited-space-of-paper/3.jpg" />
+      </div>
+      <div class="img4">
+        <img style="max-width: 100%" src="/Users/eugene/projects/olma.github.io/photos/limited-space-of-paper/4.jpg" />
+      </div>
+      <div class="text1">
+        <p>
+        LIMITED SPACE OF PAPER<br />
+        2019 – ongoing<br />
+        charcoal, pencil, liners,<br />
+        ink on paper<br />
+        50 x 70<br />
+        2019
+        </p>
+      </div>
+      <div class="img5">
+        <img style="max-width: 100%" src="/Users/eugene/projects/olma.github.io/photos/limited-space-of-paper/5.jpg" />
+      </div>
+      <div class="img6">
+        <img style="max-width: 100%" src="/Users/eugene/projects/olma.github.io/photos/limited-space-of-paper/6.jpg" />
+      </div>
+      <div class="img7">
+        <img style="max-width: 100%" src="/Users/eugene/projects/olma.github.io/photos/limited-space-of-paper/7.jpg" />
+      </div>
+      <div class="img8">
+        <img style="max-width: 100%" src="/Users/eugene/projects/olma.github.io/photos/limited-space-of-paper/8.jpg" />
+      </div>
+      <div class="img9">
+        <img style="max-width: 100%" src="/Users/eugene/projects/olma.github.io/photos/limited-space-of-paper/9.jpg" />
+      </div>
+      <div class="img10">
+        <img style="max-width: 100%" src="/Users/eugene/projects/olma.github.io/photos/limited-space-of-paper/10.jpg" />
+      </div>
+      <div class="img11"></div>
+      <div class="img12"></div>
+      <div class="img13"></div>
+      <div class="img14"></div>
+      <div class="text2"></div>
+      <div class="img15"></div>
+      <div class="img16"></div>
+      <div class="img17"></div>
     </div>
   </body>
 </html>
