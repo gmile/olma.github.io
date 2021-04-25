@@ -12,7 +12,7 @@ In order to convert files run:
 
 ```fish
 for i in (seq 1 19)
-  cwebp -q 80 $i.jpg -o $i.webp
+  cwebp -q 80 $i.jpg -o ../$i_thumbnail.webp
 end
 ```
 

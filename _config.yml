@@ -16,6 +16,9 @@ menu:
   - url: /limited-space-of-paper
     title: Limited space of paper
     enabled: true
+  - url: /untitled-forms
+    title: Untitled forms
+    enabled: true
 
 deprecated_menu:
   years:
