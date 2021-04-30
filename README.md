@@ -11,9 +11,7 @@ Figma: https://www.figma.com/file/SqcawloYI1PxmyPeMyr5Ck/olga-antonova.net?node-
 In order to convert files run:
 
 ```fish
-for i in (seq 1 19)
-  cwebp -q 80 $i.jpg -o ../$i_thumbnail.webp
-end
+mogrify image -verbose -resize 1200x1200 -quality 75 +profile *.{jpg,JPG}
 ```
 
 `80` is probably too small of a value.
