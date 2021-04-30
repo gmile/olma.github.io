@@ -1,0 +1,88 @@
+---
+layout: default
+---
+
+
+<style>
+.items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px 10px;
+  grid-template-areas:
+    ". . . text1 text1 text1"
+    ". . img1 img1 img1 text2"
+    ". . img2 img2 img3 img3"
+    ". . . img4 img4 img4"
+    ". . img5 img5 img6 img6"
+    ". . img7 img7 img8 img8"
+    ". . img9 img9 img9 ."
+    ". . img10 img10 img10 ."
+    ". . img11 img11 img12 img12"
+    ". . img13 img13 img14 img14"
+    ". . img15 img15 img16 img16"
+    ". . . img17 img17 img17"
+}
+
+.img1 { grid-area: img1; }
+
+.text2 { grid-area: text2; ; align-self: end}
+
+.img2 { grid-area: img2; }
+
+.img3 { grid-area: img3; }
+
+.text1 { grid-area: text1; }
+
+.text1 { grid-area: text1; text-align: justify; text-align-last: right }
+
+.img4 { grid-area: img4; }
+
+.img5 { grid-area: img5; }
+
+.img6 { grid-area: img6; }
+
+.img7 { grid-area: img7; }
+
+.img8 { grid-area: img8; }
+
+.img9 { grid-area: img9; }
+
+.img10 { grid-area: img10; }
+
+.img11 { grid-area: img11; }
+
+.img12 { grid-area: img12; }
+
+.img13 { grid-area: img13; }
+
+.img14 { grid-area: img14; }
+
+.img15 { grid-area: img15; }
+
+.img16 { grid-area: img16; }
+
+.img17 { grid-area: img17; }
+</style>
+
+<div class="text1">
+  <p>STORY OF STREET 2019</p>
+  <p>My series of works is observation of our interconnectedness with things (that surround us every day), with streets, with buildings, trees, people, windows, skies, birds, tables, doors… Gregory Bateson’s example of a blind man with a stick, in which he is questioning where blind’s man mind starts, at the end of a stick, at the middle and so on, leads me to the following questions: how do we know where one form ends and other begins? How do we know where our body ends and nature begins? We see a building, for example. Building can be seen as a form, not as functional construction. And when we look at it, we create some sort of connection with it.</p>
+  <p>It is said, that in quantum physics, that the mere observation of a phenomenon inevitably changes that phenomenon.</p>
+  <p>In the book “The Universe in a Single Atom: The Convergence of Science and Spirituality“ by Dalai Lama, he explains: “The notion of a pre-given, observer-independent reality is untenable. As in the new physics, matter cannot be objectively perceived or described apart from the observer—matter and mind are co-dependent.”</p>
+  <p>And why I explore those theories, is maybe because I myself don’t believe in objective reality.</p>
+  <p>If this is true and there is no objective reality, then our connection to it – is the most important thing in creating this reality.</p>
+  <p>In my works I explore those connections between me and city. I make my own portrait of the city, of its streets, buildings, windows, transports… I take a picture of a space in the city, turn it upside down to free it from gravity, top and bottom, then I add graphic forms and lines. I am transforming the reality of city by deconstructing forms of it, adding elements and shapes.</p>
+</div>
+
+
+{% for i in (1..17) %}
+  <div class="img{{ i }}">
+    <a data-fancybox="gallery" href="photos/story-of-street/originals/{{ i }}.jpg">
+      <img style="max-width: 100%" src="photos/story-of-street/thumbnails/{{ i }}.jpg" />
+    </a>
+  </div>
+{% endfor %}
+
+<div class="text2">
+  <p>projection of digital graphics on the wall<br/>2019</p>
+</div>

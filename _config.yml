@@ -19,6 +19,9 @@ menu:
   - url: /untitled-forms
     title: Untitled forms
     enabled: true
+  - url: /story-of-street
+    title: Story of street
+    enabled: true
 
 deprecated_menu:
   years:
