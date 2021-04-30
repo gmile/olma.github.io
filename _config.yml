@@ -22,6 +22,9 @@ menu:
   - url: /story-of-street
     title: Story of street
     enabled: true
+  - url: /story-of-line
+    title: Story of line
+    enabled: true
 
 deprecated_menu:
   years:
