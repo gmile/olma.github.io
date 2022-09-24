@@ -1,54 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="/css/style.css" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link  href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-  <script>
-    function run() {
-      console.log("Page loaded")
-    }
-
-    if (document.readyState != 'loading') run();
-    else if (document.addEventListener) document.addEventListener('DOMContentLoaded', run);
-    else document.attachEvent('onreadystatechange', function(){ if (document.readyState == 'complete') run() });
-  </script>
+    <title>Olga Antonova</title>
   </head>
   <body class="grid-container">
-    <div id="left-column" class="menu">
-      <a style="font-weight: bold; display: block; margin-bottom: 1em">olga antonova</a>
-
-      {% for link in site.menu %}
-        {% capture title %}
-          {{ link.title }}{% if link.collab %} <span class="collab">collab.</span>{% endif %}
-        {% endcapture %}
-
-        {% assign link_url = link.url | append: ".html" %}
-
-        {% if link.enabled %}
-          {% if link_url == page.url %}
-            <span class="work active">{{ title }}</span>
-          {% else %}
-            <a class="work" href="{{ link.url }}">{{ title }}</a>
-          {% endif %}
-        {% else %}
-          <span class="work">{{ title }}</span>
-        {% endif %}
-      {% endfor %}
-
-      <br>
-      <a class="work" href="/files/cv.pdf">cv.pdf</a>
-      <a class="work" href="/files/portfolio.pdf">portfolio.pdf</a>
-      <br>
-      <a href="https://www.instagram.com/olma__"><img height=24 src="https://en.instagram-brand.com/wp-content/themes/ig-branding/prj-ig-branding/assets/images/ig-logo-black.svg"></img></a>
-      <a href="https://www.facebook.com/olga.antonova.art"><img height=24 src="/img/fb-logo.png"></img></a>
-      <br>
-      <a class="work" href="tel:+380667079773">+380667079773</a>
-      <a class="work" href="mailto:antonova.vo@gmail.com">antonova.vo@gmail.com</a>
-    </div>
-    <div id="right-column" class="items">
-      {{ content }}
-    </div>
+    <a href="https://drive.google.com/drive/folders/19fdiDpvbnv1eYVKPt01o4z814EqCiE_n?usp=sharing">Portfolio</a>
   </body>
 </html>
