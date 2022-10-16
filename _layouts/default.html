@@ -2,10 +2,12 @@
 <html>
   <head>
     <title>Olga Antonova</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <style>
       body {
         font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
         font-weight: 300;
+        font-size: 2rem
       }
       
       p {
@@ -15,34 +17,10 @@
         left: 50%;
         transform: translate(-50%, -50%);
       }
-      
-      // iPhone X
-      @media only screen 
-          and (device-width: 375px)
-          and (device-height: 812px)
-          and (device-pixel-ratio: 3) {
+
+      @media (max-width: 600px) {
         body {
-          font-size: 200%
-        }
-      }
-      
-      // iPhone 8
-      @media only screen 
-          and (device-width: 375px)
-          and (device-height: 667px)
-          and (device-pixel-ratio: 2) {
-        body {
-          font-size: 200%
-        }
-      }
-      
-      // iPhone 8 Plus
-      @media only screen 
-          and (device-width: 414px)
-          and (device-height: 736px)
-          and (device-pixel-ratio: 3) {
-        body {
-          font-size: 200%
+          font-size: 1rem
         }
       }
       
@@ -51,7 +29,7 @@
   <body>
     <p>
       OLGA ANTONOVA</br> 
-      (*1988, Ukrainian) is currently based in Zürich<br/>
+      <nobr>(*1988, Ukrainian) is currently based in Z&#252;rich</nobr><br/>
       <a href="mailto:antonova.vo@gmail.com" target="_blank">antonova.vo@gmail.com</a><br/><br/>
 
       <a href="https://instagram.com/olma__" target="_blank">@olma__</a><br/>
